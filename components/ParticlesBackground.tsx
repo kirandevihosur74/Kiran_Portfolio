@@ -8,7 +8,7 @@ export default function ParticlesBackground() {
   const { resolvedTheme } = useTheme();
 
   const triangleColor = resolvedTheme === "dark" ? "#F1F5F9" : "#CBD5E1"; // slate-400
-  const triangleOpacity = resolvedTheme === "dark" ? 0.18 : 0.22;
+  const triangleOpacity = resolvedTheme === "dark" ? 0.2 : 0.22;
   const triangleNumber = resolvedTheme === "dark" ? 80 : 30;
 
   const particlesInit = useCallback(async (engine: any) => {
@@ -27,7 +27,7 @@ export default function ParticlesBackground() {
           background: { color: "transparent" },
           particles: {
             color: { value: triangleColor },
-            links: { color: triangleColor, opacity: triangleOpacity },
+            links: { color: triangleColor, opacity: triangleOpacity},
             opacity: { value: triangleOpacity },
             move: { enable: true, speed: 0.3 },
             number: { value: triangleNumber },

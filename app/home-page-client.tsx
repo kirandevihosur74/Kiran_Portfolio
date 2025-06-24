@@ -6,6 +6,8 @@ import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
 import { Card } from '@/components/ui/card'
 import { siteConfig } from '@/site.config'
+import Kiran_pic from '@/public/images/Kiran_pic.jpg'
+import Image from 'next/image'
 
 const featuredProjects = [
   {
@@ -43,7 +45,7 @@ export default function HomePageClient() {
       {/* Hero Section */}
       <Section className="min-h-screen flex items-center">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -65,8 +67,7 @@ export default function HomePageClient() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed"
               >
-                Full-stack developer, creator, and problem solver. Building modern web applications 
-                and sharing knowledge through code.
+                Full-stack developer, creator, and problem solver. Building modern web applications and sharing knowledge through code.
               </motion.p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.a
@@ -110,23 +111,23 @@ export default function HomePageClient() {
                 })}
               </div>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="w-full h-96 bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/20 dark:to-purple-900/20 rounded-2xl flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-32 h-32 bg-gradient-to-br from-primary-500 to-purple-500 rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-4xl font-bold text-white">K</span>
-                  </div>
-                  <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
-                    Developer & Creator
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+            <div className="flex justify-center md:justify-end">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                className="w-60 h-50 overflow-hidden rounded-2xl shadow-xl border border-gray-300 dark:border-gray-700 bg-white/5 flex items-center justify-center"
+              >
+                <Image
+                  src={Kiran_pic}
+                  alt="Kiran Devihosur"
+                  width={250}
+                  height={192}
+                  className="object-cover w-full h-full"
+                  priority
+                />
+              </motion.div>
+            </div>
           </div>
         </Container>
       </Section>
@@ -143,8 +144,8 @@ export default function HomePageClient() {
           >
             <h2 className="text-3xl font-bold">About Me</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              I'm a passionate full-stack developer with expertise in modern web technologies. 
-              I love building scalable applications, solving complex problems, and sharing my 
+              I'm a passionate full-stack developer with expertise in modern web technologies.
+              I love building scalable applications, solving complex problems, and sharing my
               knowledge with the community.
             </p>
             <a
