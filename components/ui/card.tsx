@@ -8,11 +8,11 @@ interface CardProps {
   accent?: 'orange' | 'yellow' | 'pink' | 'purple'
 }
 
-const accentBorderMap = {
-  orange: 'border-accent-orange',
-  yellow: 'border-accent-yellow',
-  pink: 'border-accent-pink',
-  purple: 'border-accent-purple',
+const accentOutlineMap = {
+  orange: 'outline outline-2 outline-[#fbbf24]',
+  yellow: 'outline outline-2 outline-yellow-400',
+  pink: 'outline outline-2 outline-pink-400',
+  purple: 'outline outline-2 outline-purple-400',
 }
 
 export function Card({ 
@@ -23,8 +23,8 @@ export function Card({
   accent = 'orange',
 }: CardProps) {
   const baseClasses = cn(
-    'relative glass rounded-2xl p-6 border-l-8 transition-all duration-300 card-hover',
-    accentBorderMap[accent],
+    'relative glass rounded-2xl p-6 transition-all duration-300 card-hover',
+    accentOutlineMap[accent],
     className
   )
 

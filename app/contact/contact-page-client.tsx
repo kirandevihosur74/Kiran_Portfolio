@@ -6,37 +6,74 @@ import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
 import { Card } from '@/components/ui/card'
 import { siteConfig } from '@/site.config'
+import emailjs from '@emailjs/browser'
+import { useRef, useState, useEffect } from 'react'
+import confetti from 'canvas-confetti'
+import toast, { Toaster } from 'react-hot-toast'
 
 const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    value: 'hello@kiran-portfolio.com',
-    href: 'mailto:hello@kiran-portfolio.com',
+    value: 'kirandevihosur74@gmail.com',
+    href: 'mailto:kirandevihosur74@gmail.com',
   },
   {
     icon: MapPin,
     title: 'Location',
-    value: 'San Francisco, CA',
-    href: null,
+    value: 'San Francisco Bay Area, CA',
+    href: "https://maps.app.goo.gl/bgt1hwvxwRrj5RRW9",
   },
   {
     icon: Phone,
     title: 'Phone',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567',
+    value: '+1 (303) 257-9505',
+    href: 'tel:+13032579505',
   },
 ]
 
 const socialLinks = [
   { name: 'GitHub', href: siteConfig.links.github, icon: Github },
-  { name: 'Twitter', href: siteConfig.links.twitter, icon: Twitter },
   { name: 'LinkedIn', href: siteConfig.links.linkedin, icon: Linkedin },
 ]
 
 export default function ContactPageClient() {
+  const formRef = useRef<HTMLFormElement>(null)
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setStatus('sending')
+    if (!formRef.current) return
+    emailjs.sendForm(
+      'service_xhajjyu',
+      'template_0qjkufm',
+      formRef.current,
+      'Ja6MKRxSoJZI9unjo'
+    )
+    .then(() => {
+      setStatus('success')
+      toast.success('Message sent successfully!')
+      formRef.current?.reset()
+    }, () => {
+      setStatus('error')
+      toast.error('Something went wrong. Please try again.')
+    })
+  }
+
+  useEffect(() => {
+    if (status === 'success') {
+      confetti({
+        particleCount: 80,
+        spread: 70,
+        origin: { y: 0.7 },
+      })
+    }
+  }, [status])
+
   return (
     <>
+      <Toaster />
       {/* Hero Section */}
       <Section className="min-h-[60vh] flex items-center">
         <Container>
@@ -75,7 +112,7 @@ export default function ContactPageClient() {
                   Fill out the form below and I'll get back to you as soon as possible.
                 </p>
               </div>
-              <form className="space-y-6">
+              <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -105,13 +142,13 @@ export default function ContactPageClient() {
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="title" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Subject
                   </label>
                   <input
                     type="text"
-                    id="subject"
-                    name="subject"
+                    id="title"
+                    name="title"
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="What's this about?"
                     required
@@ -133,8 +170,9 @@ export default function ContactPageClient() {
                 <button
                   type="submit"
                   className="w-full px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+                  disabled={status === 'sending'}
                 >
-                  Send Message
+                  {status === 'sending' ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </motion.div>

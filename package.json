@@ -10,19 +10,23 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@mdx-js/loader": "^3.0.0",
     "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^14.0.4",
     "@tailwindcss/forms": "^0.5.10",
+    "canvas-confetti": "^1.9.3",
     "clsx": "^2.0.0",
     "date-fns": "^2.30.0",
     "framer-motion": "^10.16.16",
     "lucide-react": "^0.294.0",
     "next": "14.0.4",
+    "next-seo": "^6.8.0",
     "next-sitemap": "^4.2.3",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.5.2",
     "react-simple-typewriter": "^5.0.1",
     "react-tsparticles": "^2.12.2",
     "tailwind-merge": "^2.0.0",
@@ -30,6 +34,7 @@
     "tsparticles-preset-triangles": "^2.12.0"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

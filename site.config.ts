@@ -2,13 +2,11 @@ export const siteConfig = {
   name: 'Kiran Portfolio',
   title: 'Kiran - Developer & Creator',
   description: 'Full-stack developer, creator, and problem solver. Building modern web applications and sharing knowledge through code.',
-  url: 'https://kiran-portfolio.com',
+  url: 'https://kirandevihosur.com',
   ogImage: 'https://kiran-portfolio.com/og.jpg',
   links: {
-    twitter: 'https://twitter.com/kiran',
-    github: 'https://github.com/kiran',
-    linkedin: 'https://linkedin.com/in/kiran',
-    youtube: 'https://youtube.com/@kiran',
+    github: 'https://github.com/kirandevihosur74',
+    linkedin: 'https://www.linkedin.com/in/kiran-devihosur/',
   },
   creator: 'Kiran',
   keywords: [
@@ -22,8 +20,8 @@ export const siteConfig = {
   ],
   authors: [
     {
-      name: 'Kiran',
-      url: 'https://kiran-portfolio.com',
+      name: 'Kiran Devihosur',
+      url: 'https://kirandevihosur.com',
     },
   ],
   theme: {
