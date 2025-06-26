@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kirandevihosur.com
+
+# Sitemaps
+Sitemap: https://kirandevihosur.com/sitemap.xml
