@@ -32,7 +32,7 @@ const featuredProjects = [
       'AI-powered job matching and resume tailoring portal with NLP-based match scoring, LLM resume rewriting, and ATS optimization.',
     tags: ['Django', 'React', 'Python', 'Tailwind', 'OpenAI', 'Gemini','LLMs'],
     year: '2024',
-    link: '/work/ritematch',
+    link: '/work',
     thumbnail: Ritematch,
   },
   {
@@ -41,7 +41,7 @@ const featuredProjects = [
       'Personalized business recommendation system using microservices, Kafka, Redis, and gRPC for real-time updates.',
     tags: ['Flask', 'Python', 'gRPC', 'Kafka', 'Redis', 'PostgreSQL', 'Kubernetes'],
     year: '2024',
-    link: '/work/verbizz',
+    link: '/work',
     thumbnail: Verbizz,
   },
   {
@@ -50,7 +50,7 @@ const featuredProjects = [
       'Machine learning project predicting F1 championships using PCA, K-means Clustering, SVM, Decision Tree, Linear Regression and Neural Networks.',
     tags: ['Python', 'Pandas', 'Scikit-learn','Data Visulization','Tableau', 'Machine Learning', ''],
     year: '2023',
-    link: '/work/pitstopanalytics',
+    link: '/work',
     thumbnail: PitStopAnalytics,
   },
 ]

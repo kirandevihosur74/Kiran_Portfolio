@@ -5,6 +5,11 @@ import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
 import { Card } from '@/components/ui/card'
 import { siteConfig } from '@/site.config'
+import Image from 'next/image'
+import Developer_pic from '@/public/images/Developer.png'
+import IdeasPic from '@/public/images/ideas.png'
+import Hiking_pic from '@/public/images/cu_hiking.png'
+import Voluteering_pic from '@/public/images/cu_logo.png'
 
 const techStack = [
   {
@@ -184,6 +189,32 @@ function parseMonthYear(str: string) {
   return new Date(`${month} 1, ${year}`).getTime()
 }
 
+const volunteeringExperiences = [
+  {
+    title: "Officer",
+    company: "CU Hiking Club",
+    company_url: "https://www.cuhikingclub.com",
+    logo_path: Hiking_pic,
+    duration: "Aug 2024 - May 2025",
+    location: "Boulder, Colorado",
+    description:
+      "Serve as a Hiking Officer for the CU Hiking Club, overseeing the organization and execution of group hiking activities. Responsibilities include leading hikes, planning routes, ensuring safety protocols, and coordinating with club members to foster teamwork and outdoor exploration. Actively contribute to building a vibrant hiking community within the university by encouraging participation and promoting environmental stewardship",
+    color: "#0071C5",
+  },
+  {
+    title: "Volunteering",
+    company: "University of Colorado Boulder",
+    company_url:
+      "https://drive.google.com/file/d/1gxXn_CJ0CC_ZyfYJtdRs3kOOM28eN7TT/view?usp=sharing",
+    logo_path: Voluteering_pic,
+    duration: "Apr 21, 2024",
+    location: "Boulder, Colorado",
+    description:
+      "I have given an impact of 6 hours of volunteering service for the Volunteer Resource Center during National Volunteer Week 2024 at the University of Colorado Boulder. My efforts were recognized and verified by the university as a meaningful contribution to the community.",
+    color: "#4285F4",
+  },
+]
+
 export default function AboutPageClient() {
   return (
     <>
@@ -200,7 +231,7 @@ export default function AboutPageClient() {
               About <span className="gradient-text">Me</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              I’m a passionate full-stack developer with 3+ years of experience crafting scalable, user-centric web applications. I thrive on solving complex problems, building performant distributed systems, and creating seamless digital experiences powered by modern technologies and AI.
+              I'm a passionate full-stack developer with 3+ years of experience crafting scalable, user-centric web applications. I thrive on solving complex problems, building performant distributed systems, and creating seamless digital experiences powered by modern technologies and AI.
             </p>
           </motion.div>
         </Container>
@@ -218,42 +249,35 @@ export default function AboutPageClient() {
               className="space-y-6"
             >
               <h2 className="text-3xl font-bold">My Story</h2>
-              <div className="space-y-4 text-gray-600 dark:text-gray-300">
+              <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify">
                 <p>
-                  I started my journey in web development back in 2018, fascinated by the 
-                  endless possibilities of creating digital experiences that could reach 
-                  millions of people worldwide.
+                  I started my web development journey in 2018, curious about how the web connects people and ideas. That curiosity grew into a passion for building scalable, intelligent applications that solve real-world problems.
                 </p>
                 <p>
-                  Over the years, I've worked on various projects ranging from small business 
-                  websites to large-scale enterprise applications. Each project has taught me 
-                  something new and helped me grow as a developer.
+                  Over the years, I've worked on diverse projects building backend systems in Python, designing APIs with Flask and FastAPI, and developing full-stack web apps using React, TypeScript, and Node.js. My work often bridges web engineering and AI, leveraging LLMs like GPT-4 and Gemini, along with frameworks such as Hugging Face Transformers and LangChain, to build intelligent, responsive features.
                 </p>
                 <p>
-                  When I'm not coding, you can find me sharing knowledge through blog posts, 
-                  contributing to open-source projects, or exploring new technologies. I believe 
-                  in continuous learning and staying up-to-date with the latest industry trends.
+                  What drives me is the challenge of creating efficient, maintainable systems that feel seamless to users. I love working with modern cloud-native stacks, experimenting with new technologies, and using code to bring impactful ideas to life.
                 </p>
               </div>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="flex justify-center"
-            >
-              <div className="w-80 h-80 bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/20 dark:to-purple-900/20 rounded-2xl flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-40 h-40 bg-gradient-to-br from-primary-500 to-purple-500 rounded-full mx-auto flex items-center justify-center">
-                    <span className="text-6xl font-bold text-white">K</span>
-                  </div>
-                  <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
-                    Full-Stack Developer
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+            <div className="flex justify-center md:justify-start">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                className="w-auto h-auto overflow-hidden border-2 border-gray-300 dark:border-gray-700 bg-white/5 shadow-xl flex items-center justify-center"
+              >
+                <Image
+                  src={IdeasPic}
+                  alt="Ideas Illustration"
+                  width={500}
+                  height={500}
+                  className="object-contain w-full h-full"
+                  priority
+                />
+              </motion.div>
+            </div>
           </div>
         </Container>
       </Section>
@@ -442,6 +466,62 @@ export default function AboutPageClient() {
                     </div>
                   </motion.a>
                 ))}
+            </div>
+          </motion.div>
+        </Container>
+      </Section>
+
+      {/* Volunteering & Activities Section */}
+      <Section>
+        <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="space-y-8"
+          >
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl font-bold">Volunteering & Activities</h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Ways I give back and stay engaged beyond work
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {volunteeringExperiences.map((exp, idx) => (
+                <motion.div
+                  key={exp.title + exp.company}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.15 }}
+                  whileHover={{ scale: 1.04, boxShadow: '0 0 32px 0 rgba(245,158,11,0.25)' }}
+                  className="bg-white/30 dark:bg-white/10 rounded-2xl p-6 border border-white/30 dark:border-white/20 shadow-2xl backdrop-blur-lg flex gap-4"
+                >
+                  <Image
+                    src={exp.logo_path}
+                    alt={exp.company}
+                    width={56}
+                    height={56}
+                    className="w-14 h-14 object-contain rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-2"
+                  />
+                  <div className="flex-1">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
+                      <a
+                        href={exp.company_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-lg text-primary-700 dark:text-primary-400 hover:underline"
+                      >
+                        {exp.company}
+                      </a>
+                      <span className="text-xs text-gray-500 dark:text-gray-400 ml-0 sm:ml-4">{exp.duration}</span>
+                    </div>
+                    <div className="font-semibold text-gray-900 dark:text-white mb-1">{exp.title}</div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">{exp.location}</div>
+                    <div className="text-gray-700 dark:text-gray-300 text-sm">{exp.description}</div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
         </Container>

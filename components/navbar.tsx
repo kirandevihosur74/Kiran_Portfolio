@@ -7,13 +7,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { siteConfig } from '@/site.config'
-import Typewriter from 'react-typewriter'
 
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Work', href: '/work' },
-  { name: 'Blog', href: '/blog' },
+  // { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ]
 

@@ -11,6 +11,7 @@ import Analytics from './analytics'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://kirandevihosur.com'),
   title: {
     default: siteConfig.title,
     template: `%s | ${siteConfig.name}`,
