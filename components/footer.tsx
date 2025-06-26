@@ -4,9 +4,7 @@ import { siteConfig } from '@/site.config'
 
 const socialLinks = [
   { name: 'GitHub', href: siteConfig.links.github, icon: Github },
-  { name: 'Twitter', href: siteConfig.links.twitter, icon: Twitter },
   { name: 'LinkedIn', href: siteConfig.links.linkedin, icon: Linkedin },
-  { name: 'YouTube', href: siteConfig.links.youtube, icon: Youtube },
 ]
 
 export function Footer() {
