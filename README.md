@@ -2,6 +2,10 @@
 
 A modern, responsive developer portfolio built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion.
 
+## 🌐 Live Demo
+
+[https://kirandevihosur.com](https://kirandevihosur.com)
+
 ## 🚀 Features
 
 - **Modern Tech Stack**: Next.js 14 with App Router, TypeScript, and Tailwind CSS
@@ -11,6 +15,9 @@ A modern, responsive developer portfolio built with Next.js 14, TypeScript, Tail
 - **SEO Optimized**: Built-in metadata, Open Graph, and sitemap generation
 - **MDX Support**: Write blog posts and content in Markdown
 - **Performance**: Optimized for speed and Core Web Vitals
+- **Email Integration**: Contact form powered by EmailJS
+- **Particles & Confetti**: Visual effects using react-tsparticles and canvas-confetti
+- **Toasts & Typing Animation**: User feedback with react-hot-toast and react-simple-typewriter
 
 ## 📁 Project Structure
 
@@ -42,6 +49,11 @@ A modern, responsive developer portfolio built with Next.js 14, TypeScript, Tail
 - **Theme**: next-themes
 - **Content**: MDX
 - **SEO**: next-sitemap
+- **Deployment**: gh-pages (for GitHub Pages)
+- **Email**: @emailjs/browser
+- **Particles/Confetti**: react-tsparticles, tsparticles, tsparticles-preset-triangles, canvas-confetti
+- **Toasts**: react-hot-toast
+- **Typing Animation**: react-simple-typewriter
 
 ## 🚀 Getting Started
 
@@ -119,11 +131,6 @@ export const siteConfig = {
 - Featured projects section
 - Project details and links
 
-### Blog (`/blog`)
-- Blog post listing
-- MDX support for content
-- Tag-based filtering
-
 ### Contact (`/contact`)
 - Contact form
 - Contact information
@@ -161,6 +168,16 @@ The project uses Tailwind CSS with custom utilities:
 2. Connect your repository to Vercel
 3. Deploy automatically
 
+### GitHub Pages
+
+This project supports static export and deployment to GitHub Pages using `gh-pages`:
+
+```bash
+npm run build
+npm run export
+npm run deploy
+```
+
 ### Other Platforms
 
 The project can be deployed to any platform that supports Next.js:
@@ -172,7 +189,6 @@ npm start
 
 ## 📊 Performance
 
-- **Lighthouse Score**: 95+ across all metrics
 - **Core Web Vitals**: Optimized for all metrics
 - **SEO**: Built-in metadata and sitemap generation
 - **Accessibility**: WCAG 2.1 compliant
@@ -184,17 +200,13 @@ npm start
 3. Make your changes
 4. Submit a pull request
 
-## 📄 License
+## 🧰 Development Tools
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Next.js](https://nextjs.org/) for the amazing framework
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS
-- [Framer Motion](https://www.framer.com/motion/) for animations
-- [Lucide](https://lucide.dev/) for beautiful icons
+- **Cursor**: Used as the primary AI coding assistant and editor for building and maintaining this project.
+- **ESLint**: For code linting and quality
+- **TypeScript**: For static type checking
+- **Tailwind CSS**: For utility-first styling
 
 ---
 
-Built with ❤️ by [Your Name] 
+Live: [https://kirandevihosur.com](https://kirandevihosur.com)
