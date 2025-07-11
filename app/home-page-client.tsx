@@ -9,7 +9,7 @@ import { siteConfig } from '@/site.config'
 import Kiran_pic from '@/public/images/Kiran_pic.jpg'
 import Ritematch from '@/public/images/ritematch.png'
 import Verbizz from '@/public/images/business.png'
-import PitStopAnalytics from '@/public/images/f1_pic.png'
+import f1SimPic from '@/public/images/f1_pic.png'
 import Image from 'next/image'
 
 const LeetCodeIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -27,6 +27,15 @@ const HackerRankIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const featuredProjects = [
   {
+    title: 'F1 RaceSim',
+    description:
+      'F1 race strategy simulator with real-time AI insights, multi-strategy comparison, and weather-aware predictions.',
+    tags: ['Next.js', 'FastAPI', 'Gemini AI', 'AWS Lambda', 'Vercel', 'Serverless', 'AI', 'Visualization'],
+    year: '2025',
+    link: '/work',
+    thumbnail: f1SimPic,
+  },
+  {
     title: 'Ritematch',
     description:
       'AI-powered job matching and resume tailoring portal with NLP-based match scoring, LLM resume rewriting, and ATS optimization.',
@@ -43,16 +52,8 @@ const featuredProjects = [
     year: '2024',
     link: '/work',
     thumbnail: Verbizz,
-  },
-  {
-    title: 'PitStopAnalytics',
-    description:
-      'Machine learning project predicting F1 championships using PCA, K-means Clustering, SVM, Decision Tree, Linear Regression and Neural Networks.',
-    tags: ['Python', 'Pandas', 'Scikit-learn','Data Visulization','Tableau', 'Machine Learning', ''],
-    year: '2023',
-    link: '/work',
-    thumbnail: PitStopAnalytics,
-  },
+  }
+
 ]
 
 const socialLinks = [
@@ -90,7 +91,7 @@ export default function HomePageClient() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed"
               >
-                We're living in the age of AI agents and I'm here for it. I'm a full-stack developer who enjoys building modern web apps and finding creative ways to use AI to solve real-world problems.
+                We're living in the age of AI agents and I'm here for it. I'm a developer who enjoys building modern web apps and finding creative ways to use AI to solve real-world problems.
               </motion.p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.a
@@ -167,7 +168,7 @@ export default function HomePageClient() {
           >
             <h2 className="text-3xl font-bold">About Me</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              I'm a passionate full-stack developer with expertise in modern web technologies.
+              I'm a passionate developer with expertise in modern web technologies.
               I love building scalable applications, solving complex problems, and sharing my
               knowledge with the community.
             </p>

@@ -43,19 +43,31 @@ const experience = [
     role: 'Software Engineer Intern',
     company: 'Asante Inc',
     period: 'June 2024 – Dec 2024',
-    description: 'Led development of GPT-4-powered features and scaled AWS-based APIs for AI-driven user engagement.',
+    bullets: [
+      'Built gRPC and REST APIs in Python, integrating AWS Lambda and S3 to power a high-throughput data ingestion pipeline for eCommerce campaigns.',
+      'Developed a React + TypeScript interface to manage campaign access controls, increasing engagement by 30% via real-time personalization.',
+      'Implemented integration and unit tests with Pytest and Jest, achieving 95% test coverage and reducing production defects by 25%.'
+    ]
   },
   {
     role: 'Software Engineer',
     company: 'TEKsystems Global Services',
     period: 'Aug 2021 – June 2023',
-    description: 'Built distributed systems and modular UIs using Java, Spring Boot, React, and Kafka with 99.9% uptime.',
+    bullets: [
+      'Developed event-driven microservices using Spring Boot and Kafka, integrating AWS Lambda to process distributed workloads with 20% higher throughput.',
+      'Built scalable RESTful APIs and improved system responsiveness by reducing page load time by 25% through frontend optimization with React and Redux.',
+      'Wrote and maintained automated tests using JUnit and TestNG, ensuring 93% code coverage across production services.'
+    ]
   },
   {
     role: 'Associate Software Engineer',
     company: 'Accenture',
     period: 'Nov 2020 – Aug 2021',
-    description: 'Developed secure, performant web apps and optimized Python APIs in cloud-native environments.',
+    bullets: [
+      'Developed frontend components using React and TypeScript, improving usability and cross-browser performance by 25%.',
+      'Designed RESTful APIs in Python to optimize system communication, reducing data processing time by 30%.',
+      'Deployed containerized services using Docker on AWS EC2, integrating CI/CD pipelines for automated and scalable delivery.'
+    ]
   },
 ];
 
@@ -231,7 +243,7 @@ export default function AboutPageClient() {
               About <span className="gradient-text">Me</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              I'm a passionate full-stack developer with 3+ years of experience crafting scalable, user-centric web applications. I thrive on solving complex problems, building performant distributed systems, and creating seamless digital experiences powered by modern technologies and AI.
+              I'm a passionate software engineer with 3+ years of experience building backend systems, LLM-integrated applications, and real-time APIs. I am open to Software Engineer, SDE, Data Scientist, AI/ML Engineer, and Data Engineer roles. I thrive on designing distributed systems, optimizing inference pipelines, and deploying scalable, reliable services that prioritize performance, safety, and interpretability.
             </p>
           </motion.div>
         </Container>
@@ -415,9 +427,11 @@ export default function AboutPageClient() {
                       <p className="text-primary-600 dark:text-primary-400 font-medium">
                         {job.company}
                       </p>
-                      <p className="text-gray-600 dark:text-gray-300">
-                        {job.description}
-                      </p>
+                      <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 space-y-1">
+                        {job.bullets.map((bullet, idx) => (
+                          <li key={idx}>{bullet}</li>
+                        ))}
+                      </ul>
                     </div>
                   </Card>
                 </motion.div>

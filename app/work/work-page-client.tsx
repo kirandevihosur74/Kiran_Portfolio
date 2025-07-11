@@ -12,8 +12,21 @@ import Ritematch_pic from '@/public/images/ritematch_pic.png'
 import Dashboard_pic from '@/public/images/F1_dashboard.png'
 import LLM_forge_pic from '@/public/images/llm_forge.png'
 import Stream_pic from '@/public/images/Stream_biz_pic.png'
+import f1Pic from '@/public/images/f1_pic.png'
+import f1SimPic from '@/public/images/f1_sim.png'
 
 const projects = [
+  {
+    id: 'f1-racesim',
+    title: 'F1 RaceSim: Real-Time Race Simulation with AI Insights',
+    description: 'Built a full-stack race strategy simulator using Next.js, FastAPI, and Gemini AI, enabling real-time simulation, multi-strategy comparison, and weather-aware race prediction with interactive visualizations; deployed on AWS Lambda and Vercel, achieving 40% faster cold-start time through serverless optimization and AI inference rate-limiting.',
+    image: f1SimPic,
+    tags: ['Next.js', 'FastAPI', 'Gemini AI', 'AWS Lambda', 'Vercel', 'Serverless', 'AI', 'Visualization'],
+    year: '2025',
+    link: 'https://github.com/kirandevihosur74/F1-RaceSim', // replace with actual repo if available
+    demo: 'https://f1-racesim-demo.com', // replace with actual live demo if available
+    featured: true,
+  },
   {
     id: 'verbizz',
     title: 'Verbizz – Personalized Business Recommendation System',
@@ -64,7 +77,7 @@ const projects = [
     description: 'A complete ML pipeline with fine-tuned BERT for binary sentiment classification. Includes PyTorch/TensorFlow support, FastAPI REST API, Prometheus monitoring, and Docker-based deployment.',
     image: LLM_forge_pic,
     tags: ['BERT', 'PyTorch', 'TensorFlow', 'FastAPI', 'Docker', 'Prometheus', 'NLP'],
-    year: '2024',
+    year: '2025',
     link: 'https://github.com/kirandevihosur74/LLMForge',
     demo: 'http://localhost:8000', // replace with actual if deployed
     featured: true,
@@ -75,7 +88,7 @@ const projects = [
     description: 'A data visualization dashboard that explores Formula 1 racing statistics using Streamlit and embedded Tableau Public views. Provides real-time, interactive insights into race data, driver performance, and team analytics.',
     image: Dashboard_pic,
     tags: ['Streamlit', 'Tableau Public', 'Python', 'Data Visualization'],
-    year: '2024',
+    year: '2025',
     link: 'https://github.com/kirandevihosur74/F1_dashboard',  // replace with your actual repo if available
     demo: 'https://public.tableau.com/views/F1_dashboard_new/Dashboard2?:embed=y&:display_count=yes&:showVizHome=no',          // replace with actual deployed link if available
     featured: true
