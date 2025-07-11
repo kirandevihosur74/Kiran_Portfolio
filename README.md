@@ -208,5 +208,3 @@ npm start
 - **Tailwind CSS**: For utility-first styling
 
 ---
-
-Live: [https://kirandevihosur.com](https://kirandevihosur.com)
