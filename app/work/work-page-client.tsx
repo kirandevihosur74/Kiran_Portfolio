@@ -23,8 +23,8 @@ const projects = [
     image: f1SimPic,
     tags: ['Next.js', 'FastAPI', 'Gemini AI', 'AWS Lambda', 'Vercel', 'Serverless', 'AI', 'Visualization'],
     year: '2025',
-    link: 'https://github.com/kirandevihosur74/F1-RaceSim', // replace with actual repo if available
-    demo: 'https://f1-racesim-demo.com', // replace with actual live demo if available
+    link: 'https://github.com/kirandevihosur74/F1RaceSim', // replace with actual repo if available
+    demo: 'https://f1-race-sim.vercel.app', // replace with actual live demo if available
     featured: true,
   },
   {
