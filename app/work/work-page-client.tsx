@@ -202,7 +202,7 @@ export default function WorkPageClient() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="h-full" accent="orange">
+                  <Card className="h-full !outline-none [&]:outline-none">
                     <div className="space-y-4">
                       <div className="aspect-video bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center">
                         <Image

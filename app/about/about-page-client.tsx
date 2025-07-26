@@ -11,6 +11,86 @@ import IdeasPic from '@/public/images/ideas.png'
 import Hiking_pic from '@/public/images/cu_hiking.png'
 import Voluteering_pic from '@/public/images/cu_logo.png'
 
+const LinkedInIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+  </svg>
+)
+
+// Company Logo Components
+import createLogo from '@/public/images/createxyz_logo.png'
+import asanteLogo from '@/public/images/asanteimpact_logo.png'
+import tekLogo from '@/public/images/tek_logo.png'
+import accentureLogo from '@/public/images/accenture_logo.png'
+import coloradoBoulderLogo from '@/public/images/colorado_boulder.png'
+import kletechLogo from '@/public/images/kletech.png'
+
+const CreateLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <Image 
+    src={createLogo} 
+    alt="Create Logo" 
+    width={20} 
+    height={20}
+    className="w-5 h-5 object-contain"
+  />
+)
+
+const AsanteLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <Image 
+    src={asanteLogo} 
+    alt="ASANTe Logo" 
+    width={20} 
+    height={20}
+    className="w-5 h-5 object-contain"
+  />
+)
+
+const TEKsystemsLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <Image 
+    src={tekLogo} 
+    alt="TEKsystems Logo" 
+    width={20} 
+    height={20}
+    className="w-5 h-5 object-contain"
+  />
+)
+
+const AccentureLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <Image 
+    src={accentureLogo} 
+    alt="Accenture Logo" 
+    width={20} 
+    height={20}
+    className="w-5 h-5 object-contain"
+  />
+)
+
+// University Logo Components
+const ColoradoBoulderLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <Image 
+    src={coloradoBoulderLogo} 
+    alt="University of Colorado Boulder Logo" 
+    width={20} 
+    height={20}
+    className="w-5 h-5 object-contain"
+  />
+)
+
+const KLEtechLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <Image 
+    src={kletechLogo} 
+    alt="KLE Technological University Logo" 
+    width={20} 
+    height={20}
+    className="w-5 h-5 object-contain"
+  />
+)
+
 const techStack = [
   {
     category: 'Frontend',
@@ -40,9 +120,25 @@ const techStack = [
 
 const experience = [
   {
+    role: 'Software Engineer',
+    company: 'Create',
+    period: 'Jul 2025 – Present',
+    location: 'San Francisco, CA',
+    linkedin: 'https://www.linkedin.com/company/createxyz/',
+    logo: CreateLogo,
+    bullets: [
+      'Built user-facing tooling and modular React components to support LLM-based app generation, speeding up prototyping workflows by 60%.',
+      'Designed and deployed data pipelines powering AI training and evaluation, reducing ingestion latency by 45% and enabling iterative model improvements.',
+      'Fine-tuned generative AI agents to produce high-quality frontends, incorporating usability heuristics, structured UI trees, and real-time feedback mechanisms.'
+    ]
+  },
+  {
     role: 'Software Engineer Intern',
     company: 'Asante Inc',
     period: 'June 2024 – Dec 2024',
+    location: 'Boulder, CO',
+    linkedin: 'https://www.linkedin.com/company/asanteimpact/',
+    logo: AsanteLogo,
     bullets: [
       'Built gRPC and REST APIs in Python, integrating AWS Lambda and S3 to power a high-throughput data ingestion pipeline for eCommerce campaigns.',
       'Developed a React + TypeScript interface to manage campaign access controls, increasing engagement by 30% via real-time personalization.',
@@ -53,6 +149,9 @@ const experience = [
     role: 'Software Engineer',
     company: 'TEKsystems Global Services',
     period: 'Aug 2021 – June 2023',
+    location: 'Bangalore, India',
+    linkedin: 'https://www.linkedin.com/company/teksystems-global-services-india/',
+    logo: TEKsystemsLogo,
     bullets: [
       'Developed event-driven microservices using Spring Boot and Kafka, integrating AWS Lambda to process distributed workloads with 20% higher throughput.',
       'Built scalable RESTful APIs and improved system responsiveness by reducing page load time by 25% through frontend optimization with React and Redux.',
@@ -63,6 +162,9 @@ const experience = [
     role: 'Associate Software Engineer',
     company: 'Accenture',
     period: 'Nov 2020 – Aug 2021',
+    location: 'Bangalore, India',
+    linkedin: 'https://www.linkedin.com/company/accenture',
+    logo: AccentureLogo,
     bullets: [
       'Developed frontend components using React and TypeScript, improving usability and cross-browser performance by 25%.',
       'Designed RESTful APIs in Python to optimize system communication, reducing data processing time by 30%.',
@@ -77,6 +179,8 @@ const education = [
     degree: 'Master of Science in Data Science',
     period: 'Aug 2023 – May 2025',
     location: 'Boulder, CO',
+    linkedin: 'https://www.linkedin.com/school/cuboulder/',
+    logo: ColoradoBoulderLogo,
     gpa: 'GPA: 3.97 / 4.00',
     highlights: [
       'Data Structures & Algorithms',
@@ -93,6 +197,8 @@ const education = [
     degree: 'Bachelor of Technology in Computer Science and Engineering',
     period: 'Aug 2016 – June 2020',
     location: 'Hubli, India',
+    linkedin: 'https://www.linkedin.com/school/kletechbvb/',
+    logo: KLEtechLogo,
     gpa: 'GPA: 8.52 / 10.00',
     highlights: [
       'Data Structures and Algorithms',
@@ -364,11 +470,31 @@ export default function AboutPageClient() {
                   className="relative bg-white/30 dark:bg-white/10 rounded-2xl p-8 border border-white/30 dark:border-white/20 shadow-2xl backdrop-blur-lg transition-all hover:scale-105 hover:shadow-2xl"
                 >
                   <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-                    <div>
-                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{edu.institution}</h3>
-                      <p className="text-sm text-gray-800 dark:text-gray-100">{edu.location}</p>
+                    <div className="flex items-center gap-3">
+                      {edu.logo && (
+                        <div className="w-8 h-8 flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg">
+                          <edu.logo className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                        </div>
+                      )}
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{edu.institution}</h3>
+                        {edu.linkedin && (
+                          <a
+                            href={edu.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-1 text-gray-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                            title={`Visit ${edu.institution} on LinkedIn`}
+                          >
+                            <LinkedInIcon className="w-4 h-4" />
+                          </a>
+                        )}
+                      </div>
                     </div>
-                    <div className="text-sm text-gray-800 dark:text-gray-100">{edu.period}</div>
+                    <div className="flex flex-col items-end gap-1">
+                      <div className="text-sm text-gray-800 dark:text-gray-100">{edu.period}</div>
+                      <div className="text-sm text-gray-600 dark:text-gray-400">{edu.location}</div>
+                    </div>
                   </div>
                   <div className="mt-2">
                     <span className="font-medium text-gray-900 dark:text-white">{edu.degree}</span>
@@ -416,7 +542,7 @@ export default function AboutPageClient() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <Card className="bg-white/30 dark:bg-white/10 border border-white/30 dark:border-white/20 shadow-2xl backdrop-blur-lg">
+                  <Card className="bg-white/30 dark:bg-white/10 shadow-2xl backdrop-blur-lg !outline-none [&]:outline-none">
                     <div className="space-y-4">
                       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                         <h3 className="text-xl font-semibold">{job.role}</h3>
@@ -424,9 +550,36 @@ export default function AboutPageClient() {
                           {job.period}
                         </span>
                       </div>
-                      <p className="text-primary-600 dark:text-primary-400 font-medium">
-                        {job.company}
-                      </p>
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <div className="flex items-center gap-3">
+                          {job.logo && (
+                            <div className="w-8 h-8 flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-lg">
+                              <job.logo className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                            </div>
+                          )}
+                          <div className="flex items-center gap-2">
+                            <p className="text-primary-600 dark:text-primary-400 font-medium">
+                              {job.company}
+                            </p>
+                            {job.linkedin && (
+                              <a
+                                href={job.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-1 text-gray-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                                title={`Visit ${job.company} on LinkedIn`}
+                              >
+                                <LinkedInIcon className="w-4 h-4" />
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                        {job.location && (
+                          <span className="text-sm text-gray-500 dark:text-gray-400">
+                            {job.location}
+                          </span>
+                        )}
+                      </div>
                       <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 space-y-1">
                         {job.bullets.map((bullet, idx) => (
                           <li key={idx}>{bullet}</li>

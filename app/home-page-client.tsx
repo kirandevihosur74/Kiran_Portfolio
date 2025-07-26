@@ -210,12 +210,12 @@ export default function HomePageClient() {
                   whileHover={{
                     scale: 1.04,
                     y: -8,
-                    boxShadow: '0 8px 32px 0 rgba(0,0,0,0.25), 0 0 0 4px rgba(0, 0, 0, 0.67)',
+                    boxShadow: '0 8px 32px 0 rgba(0,0,0,0.25)',
                     transition: { type: 'spring', stiffness: 300, damping: 20 }
                   }}
                   whileTap={{
                     scale: 0.97,
-                    boxShadow: '0 4px 16px 0 rgba(0,0,0,0.18), 0 0 0 2px #fbbf24aa'
+                    boxShadow: '0 4px 16px 0 rgba(0,0,0,0.18)'
                   }}
                   style={{ borderRadius: '1rem' }}
                   onClick={e => {
@@ -224,26 +224,17 @@ export default function HomePageClient() {
                 >
                   <Card
                     href={project.link}
-                    className="relative h-72 overflow-hidden rounded-2xl backdrop-blur-md bg-white/10 dark:bg-black/30 p-0 flex flex-col justify-end"
-                    accent="orange"
+                    className="relative h-72 overflow-hidden rounded-2xl backdrop-blur-md bg-white/10 dark:bg-black/30 p-0 flex flex-col justify-end !outline-none [&]:outline-none border-0"
                   >
                     <div className="absolute inset-0 z-0">
-                      <motion.div
-                        initial={{ scale: 1 }}
-                        whileHover={{ scale: 1.08 }}
-                        transition={{ duration: 2, ease: 'easeOut' }}
-                        className="w-full h-full"
-                        style={{ willChange: 'transform' }}
-                      >
-                        <Image
-                          src={project.thumbnail}
-                          alt={project.title}
-                          fill
-                          className="object-cover w-full h-full opacity-80"
-                          priority
-                        />
-                        <div className="absolute inset-0 bg-black/40" />
-                      </motion.div>
+                      <Image
+                        src={project.thumbnail}
+                        alt={project.title}
+                        fill
+                        className="object-cover w-full h-full opacity-80"
+                        priority
+                      />
+                      <div className="absolute inset-0 bg-black/40" />
                     </div>
                     <div className="relative z-10 p-6 flex flex-col h-full">
                       <div className="flex justify-between items-start">
