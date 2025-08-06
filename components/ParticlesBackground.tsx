@@ -2,7 +2,7 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadTrianglesPreset } from "tsparticles-preset-triangles";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/components/theme-provider";
 
 export default function ParticlesBackground() {
   const { resolvedTheme } = useTheme();

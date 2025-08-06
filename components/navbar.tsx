@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Sun, Moon } from 'lucide-react'
-import { useTheme } from 'next-themes'
+import { useTheme } from '@/components/theme-provider'
 import { siteConfig } from '@/site.config'
 
 const navItems = [
