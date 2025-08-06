@@ -120,7 +120,7 @@ const techStack = [
 
 const experience = [
   {
-    role: 'Software Engineer',
+    role: 'Founding AI Engineer',
     company: 'Create',
     period: 'Jul 2025 – Present',
     location: 'San Francisco, CA',
