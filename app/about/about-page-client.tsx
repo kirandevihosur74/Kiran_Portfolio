@@ -102,7 +102,7 @@ const techStack = [
   },
   {
     category: 'AI/ML',
-    technologies: ['GPT-4','Gemini','LLMs', 'Hugging Face Transformers', 'Scikit-learn', 'TensorFlow'],
+    technologies: ['GPT-4','Gemini','Claude (Anthropic)','LLMs', 'Hugging Face Transformers', 'Scikit-learn', 'TensorFlow'],
   },
   {
     category: 'Distributed Systems',
@@ -127,35 +127,35 @@ const experience = [
     linkedin: 'https://www.linkedin.com/company/createxyz/',
     logo: CreateLogo,
     bullets: [
-      'Built user-facing tooling and modular React components to support LLM-based app generation, speeding up prototyping workflows by 60%.',
-      'Designed and deployed data pipelines powering AI training and evaluation, reducing ingestion latency by 45% and enabling iterative model improvements.',
-      'Fine-tuned generative AI agents to produce high-quality frontends, incorporating usability heuristics, structured UI trees, and real-time feedback mechanisms.'
+      'Developed Retrieval-Augmented Generation (RAG) pipelines, improving Mean Reciprocal Rank (MRR) by 0.3 and enhancing AI response accuracy.',
+      'Engineered scalable data pipelines powering AI training and evaluation, improving ingestion efficiency by 45% and enabling iterative model improvements.',
+      'Fine-tuned generative AI agents to produce high-quality frontends, improving component usability scores by 25% through structured UI trees and real-time feedback.'
     ]
   },
   {
-    role: 'Software Engineer Intern',
+    role: 'AI Engineer',
     company: 'Asante Inc',
     period: 'June 2024 – Dec 2024',
     location: 'Boulder, CO',
     linkedin: 'https://www.linkedin.com/company/asanteimpact/',
     logo: AsanteLogo,
     bullets: [
-      'Built gRPC and REST APIs in Python, integrating AWS Lambda and S3 to power a high-throughput data ingestion pipeline for eCommerce campaigns.',
-      'Developed a React + TypeScript interface to manage campaign access controls, increasing engagement by 30% via real-time personalization.',
-      'Implemented integration and unit tests with Pytest and Jest, achieving 95% test coverage and reducing production defects by 25%.'
+      'Evaluated state-of-the-art LLMs achieving 0.6 correlation and developed adaptive prompting strategies, improving task success rates by 20%.',
+      'Built real-time monitoring and logging systems, reducing error detection latency by 35% and enhancing system reliability.',
+      'Developed gRPC and REST APIs in Python, integrating AWS Lambda and S3 to power high-throughput data ingestion pipelines for eCommerce campaigns.'
     ]
   },
   {
-    role: 'Software Engineer',
+    role: 'Software Engineer (AI)',
     company: 'TEKsystems Global Services',
     period: 'Aug 2021 – June 2023',
     location: 'Bangalore, India',
     linkedin: 'https://www.linkedin.com/company/teksystems-global-services-india/',
     logo: TEKsystemsLogo,
     bullets: [
-      'Developed event-driven microservices using Spring Boot and Kafka, integrating AWS Lambda to process distributed workloads with 20% higher throughput.',
-      'Built scalable RESTful APIs and improved system responsiveness by reducing page load time by 25% through frontend optimization with React and Redux.',
-      'Wrote and maintained automated tests using JUnit and TestNG, ensuring 93% code coverage across production services.'
+      'Engineered event-driven microservices using Spring Boot and Kafka, increasing backend scalability and reducing processing latency by 20%.',
+      'Designed high-throughput data pipelines, cutting data ingestion delays by 35% and improving system performance.',
+      'Partnered with data scientists to deploy and operationalize ML models, improving iteration speed by 25% and model deployment efficiency.'
     ]
   },
   {
@@ -349,7 +349,7 @@ export default function AboutPageClient() {
               About <span className="gradient-text">Me</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              I'm a passionate software engineer with 3+ years of experience building backend systems, LLM-integrated applications, and real-time APIs. I am open to Software Engineer, SDE, Data Scientist, AI/ML Engineer, and Data Engineer roles. I thrive on designing distributed systems, optimizing inference pipelines, and deploying scalable, reliable services that prioritize performance, safety, and interpretability.
+              I'm a passionate AI/ML engineer with 3+ years of experience building intelligent systems, RAG pipelines, and LLM-integrated applications. I am actively seeking <span className="font-semibold text-primary-600 dark:text-primary-400">AI/ML Engineer</span>, <span className="font-semibold text-primary-600 dark:text-primary-400">Machine Learning Engineer</span>, <span className="font-semibold text-primary-600 dark:text-primary-400">Data Scientist</span>, and <span className="font-semibold text-primary-600 dark:text-primary-400">AI Research Engineer</span> roles. I thrive on designing distributed AI systems, optimizing inference pipelines, and deploying scalable, reliable AI services that prioritize performance, safety, and interpretability.
             </p>
           </motion.div>
         </Container>
@@ -369,13 +369,13 @@ export default function AboutPageClient() {
               <h2 className="text-3xl font-bold">My Story</h2>
               <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify">
                 <p>
-                  I started my web development journey in 2018, curious about how the web connects people and ideas. That curiosity grew into a passion for building scalable, intelligent applications that solve real-world problems.
+                  I started my AI/ML journey in 2018, curious about how artificial intelligence could transform the way we solve complex problems. That curiosity evolved into a passion for building intelligent, scalable systems that bridge the gap between cutting-edge AI research and real-world applications.
                 </p>
                 <p>
-                  Over the years, I've worked on diverse projects building backend systems in Python, designing APIs with Flask and FastAPI, and developing full-stack web apps using React, TypeScript, and Node.js. My work often bridges web engineering and AI, leveraging LLMs like GPT-4 and Gemini, along with frameworks such as Hugging Face Transformers and LangChain, to build intelligent, responsive features.
+                  Over the years, I've specialized in developing RAG systems, fine-tuning LLMs, and building production-ready AI pipelines. My expertise spans from designing distributed AI architectures to implementing state-of-the-art models using frameworks like Hugging Face Transformers, PyTorch, and LangChain. I've successfully deployed AI systems that process real-time data, optimize inference performance, and deliver measurable business impact.
                 </p>
                 <p>
-                  What drives me is the challenge of creating efficient, maintainable systems that feel seamless to users. I love working with modern cloud-native stacks, experimenting with new technologies, and using code to bring impactful ideas to life.
+                  What drives me is the challenge of making AI more accessible, interpretable, and reliable. I love experimenting with emerging AI technologies, optimizing model performance, and building systems that not only work efficiently but also provide clear insights into their decision-making processes.
                 </p>
               </div>
             </motion.div>
