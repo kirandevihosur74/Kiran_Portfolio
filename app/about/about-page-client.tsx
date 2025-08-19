@@ -127,7 +127,7 @@ const experience = [
     linkedin: 'https://www.linkedin.com/company/createxyz/',
     logo: CreateLogo,
     bullets: [
-      'Developed Retrieval-Augmented Generation (RAG) pipelines, improving Mean Reciprocal Rank (MRR) by 0.3 and enhancing AI response accuracy.',
+      'Led the AI pipeline design team, enhancing model-driven design workflows that scaled product capabilities and contributed to ARR growth from $2M to $5M.',
       'Engineered scalable data pipelines powering AI training and evaluation, improving ingestion efficiency by 45% and enabling iterative model improvements.',
       'Fine-tuned generative AI agents to produce high-quality frontends, improving component usability scores by 25% through structured UI trees and real-time feedback.'
     ]
