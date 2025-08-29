@@ -120,42 +120,42 @@ const techStack = [
 
 const experience = [
   {
-    role: 'Founding AI Engineer',
-    company: 'Create',
+    role: 'Software Engineer',
+    company: 'Anything (formerly Create)',
     period: 'Jul 2025 – Present',
     location: 'San Francisco, CA',
     linkedin: 'https://www.linkedin.com/company/createxyz/',
     logo: CreateLogo,
     bullets: [
-      'Led the AI pipeline design team, enhancing model-driven design workflows that scaled product capabilities and contributed to ARR growth from $2M to $5M.',
-      'Engineered scalable data pipelines powering AI training and evaluation, improving ingestion efficiency by 45% and enabling iterative model improvements.',
-      'Fine-tuned generative AI agents to produce high-quality frontends, improving component usability scores by 25% through structured UI trees and real-time feedback.'
+      'Built user-facing tooling and modular React components to support LLM-based app generation, speeding up prototyping workflows by 60%.',
+      'Designed and deployed data pipelines powering AI training and evaluation, reducing ingestion latency by 45% and enabling iterative model improvements.',
+      'Fine-tuned generative AI agents to produce high-quality frontends, incorporating usability heuristics, structured UI trees, and real-time feedback mechanisms.'
     ]
   },
   {
-    role: 'AI Engineer',
+    role: 'Software Engineer',
     company: 'Asante Inc',
     period: 'June 2024 – Dec 2024',
     location: 'Boulder, CO',
     linkedin: 'https://www.linkedin.com/company/asanteimpact/',
     logo: AsanteLogo,
     bullets: [
-      'Evaluated state-of-the-art LLMs achieving 0.6 correlation and developed adaptive prompting strategies, improving task success rates by 20%.',
-      'Built real-time monitoring and logging systems, reducing error detection latency by 35% and enhancing system reliability.',
-      'Developed gRPC and REST APIs in Python, integrating AWS Lambda and S3 to power high-throughput data ingestion pipelines for eCommerce campaigns.'
+      'Developed a React + TypeScript admin interface for campaign access management, improving UX and increasing engagement by 30%.',
+      'Built gRPC and REST APIs in Python, integrating AWS Lambda and S3 to streamline high-throughput data pipelines.',
+      'Implemented tests with Jest and Pytest, achieving 95% coverage and reducing production defects by 25%.'
     ]
   },
   {
-    role: 'Software Engineer (AI)',
+    role: 'Software Engineer',
     company: 'TEKsystems Global Services',
     period: 'Aug 2021 – June 2023',
     location: 'Bangalore, India',
     linkedin: 'https://www.linkedin.com/company/teksystems-global-services-india/',
     logo: TEKsystemsLogo,
     bullets: [
-      'Engineered event-driven microservices using Spring Boot and Kafka, increasing backend scalability and reducing processing latency by 20%.',
-      'Designed high-throughput data pipelines, cutting data ingestion delays by 35% and improving system performance.',
-      'Partnered with data scientists to deploy and operationalize ML models, improving iteration speed by 25% and model deployment efficiency.'
+      'Improved frontend responsiveness and performance by integrating React, Redux, and component-level caching, cutting page load times by 25%.',
+      'Partnered with UX team to redesign critical user flows, increasing customer satisfaction and reducing support tickets.',
+      'Built event-driven microservices with Spring Boot, Kafka, and AWS Lambda to improve backend scalability by 20%.'
     ]
   },
   {
