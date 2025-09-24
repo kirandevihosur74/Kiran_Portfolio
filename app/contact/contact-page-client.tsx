@@ -21,7 +21,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Location',
-    value: 'San Francisco Bay Area, CA',
+    value: 'San Francisco, CA',
     href: "https://maps.app.goo.gl/bgt1hwvxwRrj5RRW9",
   },
   {

@@ -23,8 +23,8 @@ const projects = [
     image: f1SimPic,
     tags: ['Next.js', 'FastAPI', 'Gemini AI', 'AWS Lambda', 'Vercel', 'Serverless', 'AI', 'Visualization'],
     year: '2025',
-    link: 'https://github.com/kirandevihosur74/F1RaceSim', // replace with actual repo if available
-    demo: 'https://f1-race-sim.vercel.app', // replace with actual live demo if available
+    link: 'https://github.com/kirandevihosur74/F1RaceSim',
+    demo: 'https://f1-race-sim.vercel.app',
     featured: true,
   },
   {
@@ -40,10 +40,10 @@ const projects = [
   },
   {
     id: 'ritematch',
-    title: 'Ritematch – AI-Powered Job Matching & Resume Tailoring Portal',
-    description: 'A full-stack web platform using LLMs to match resumes to jobs, tailor content with generative AI, and provide ATS-optimized resume outputs. Built with Django and React for a seamless user experience.',
+    title: 'Ritematch: Smart Job Matching Engine',
+    description: 'Built a job-matching system using React, Django, and GPT-4o, exposing REST APIs for LLM-based resume tailoring and similarity scoring; improved match relevance by 20%.',
     image: Ritematch_pic,
-    tags: ['Django', 'React', 'GPT-4o', 'Gemini', 'Tailwind CSS', 'DRF', 'Firebase'],
+    tags: ['Django', 'React', 'GPT-4o', 'REST APIs', 'LLM', 'Job Matching'],
     year: '2023',
     link: 'https://github.com/kirandevihosur74/RiteMatch',
     demo: 'https://ritematch-demo.com',
@@ -62,24 +62,24 @@ const projects = [
   },
   {
     id: 'bizstream',
-    title: 'BizStream – Streaming Smart Business Recommendations in Real-Time',
-    description: 'A real-time microservices platform that matches users to businesses using Kafka, Redis, FastAPI, and Streamlit. Built with containerized services and a live recommendation pipeline powered by streaming Yelp data.',
+    title: 'BizStream: Real-Time Business Recommendation Engine',
+    description: 'Engineered a real-time recommendation system using Kafka, Redis, and FastAPI, with Docker Compose orchestration and async data pipelines, reducing API latency by 35% through smart caching and efficient I/O handling.',
     image: Stream_pic,
-    tags: ['Kafka', 'Redis', 'FastAPI', 'Streamlit', 'Docker Compose', 'Python'],
+    tags: ['Kafka', 'Redis', 'FastAPI', 'Docker Compose', 'Python', 'Async'],
     year: '2025',
     link: 'https://github.com/kirandevihosur74/BizStream-Business-Stream',
-    demo: 'http://localhost:8501',  // replace with actual deployed link if available
+    demo: 'http://localhost:8501',
     featured: true
   },
   {
     id: 'llmforge',
-    title: 'LLMForge – Sentiment Analysis with BERT',
-    description: 'A complete ML pipeline with fine-tuned BERT for binary sentiment classification. Includes PyTorch/TensorFlow support, FastAPI REST API, Prometheus monitoring, and Docker-based deployment.',
+    title: 'LLMForge: Sentiment Analysis API',
+    description: 'Developed a production-grade sentiment analysis API using FastAPI and BERT, with Prometheus-based monitoring and Dockerized deployment; achieved 98% accuracy on IMDb and enabled PyTorch-TensorFlow portability.',
     image: LLM_forge_pic,
     tags: ['BERT', 'PyTorch', 'TensorFlow', 'FastAPI', 'Docker', 'Prometheus', 'NLP'],
     year: '2025',
     link: 'https://github.com/kirandevihosur74/LLMForge',
-    demo: 'http://localhost:8000', // replace with actual if deployed
+    demo: 'http://localhost:8000',
     featured: true,
   },
   {

@@ -93,42 +93,42 @@ const KLEtechLogo = (props: React.SVGProps<SVGSVGElement>) => (
 
 const techStack = [
   {
-    category: 'Frontend',
-    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML/CSS'],
+    category: 'Languages',
+    technologies: ['JavaScript', 'TypeScript', 'Python', 'SQL', 'HTML', 'CSS'],
   },
   {
-    category: 'Backend',
-    technologies: ['Java', 'Python', 'Node.js', 'Flask', 'Spring Boot', 'PostgreSQL', 'MongoDB', 'Redis'],
+    category: 'Frameworks & APIs',
+    technologies: ['React', 'Next.js', 'Tailwind', 'FastAPI', 'Flask', 'Django', 'Spring Boot', 'REST', 'gRPC'],
   },
   {
     category: 'AI/ML',
-    technologies: ['GPT-4','Gemini','Claude (Anthropic)','LLMs', 'Hugging Face Transformers', 'Scikit-learn', 'TensorFlow'],
+    technologies: ['OpenAI API (GPT-4o)', 'HuggingFace Transformers', 'Scikit-learn', 'BERT', 'LangChain'],
   },
   {
-    category: 'Distributed Systems',
-    technologies: ['Kafka', 'gRPC', 'REST APIs', 'Spark', 'Delta Lake'],
+    category: 'DevOps',
+    technologies: ['Docker', 'GitHub Actions', 'AWS Lambda', 'Kubernetes', 'CI/CD'],
   },
   {
-    category: 'Cloud & DevOps',
-    technologies: ['AWS', 'GCP', 'Docker', 'Kubernetes', 'Git', 'CI/CD'],
+    category: 'Monitoring',
+    technologies: ['AWS CloudWatch', 'Prometheus', 'Logging', 'Alerting'],
   },
   {
-    category: 'Testing & Tools',
-    technologies: ['PyTest', 'Jest', 'JUnit', 'Postman', 'GitHub Copilot', 'Cursor'],
+    category: 'Databases',
+    technologies: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
   },
 ];
 
 const experience = [
   {
     role: 'Software Engineer',
-    company: 'Anything (formerly Create)',
+    company: 'Anything (createanything.com)',
     period: 'Jul 2025 – Present',
     location: 'San Francisco, CA',
     linkedin: 'https://www.linkedin.com/company/createxyz/',
     logo: CreateLogo,
     bullets: [
+      'Led the AI pipeline design team, enhancing model-driven design workflows that scaled product capabilities and contributed to ARR growth from $2M to $5M.',
       'Built user-facing tooling and modular React components to support LLM-based app generation, speeding up prototyping workflows by 60%.',
-      'Designed and deployed data pipelines powering AI training and evaluation, reducing ingestion latency by 45% and enabling iterative model improvements.',
       'Fine-tuned generative AI agents to produce high-quality frontends, incorporating usability heuristics, structured UI trees, and real-time feedback mechanisms.'
     ]
   },
@@ -369,13 +369,13 @@ export default function AboutPageClient() {
               <h2 className="text-3xl font-bold">My Story</h2>
               <div className="space-y-4 text-gray-600 dark:text-gray-300 text-justify">
                 <p>
-                  I started my AI/ML journey in 2018, curious about how artificial intelligence could transform the way we solve complex problems. That curiosity evolved into a passion for building intelligent, scalable systems that bridge the gap between cutting-edge AI research and real-world applications.
+                  I'm an AI/ML Software Engineer passionate about building AI-powered tools, full-stack applications, and scalable data infrastructure. My expertise lies in Python for production ML deployment, LLM agent orchestration, coding agents, and inference optimization.
                 </p>
                 <p>
-                  Over the years, I've specialized in developing RAG systems, fine-tuning LLMs, and building production-ready AI pipelines. My expertise spans from designing distributed AI architectures to implementing state-of-the-art models using frameworks like Hugging Face Transformers, PyTorch, and LangChain. I've successfully deployed AI systems that process real-time data, optimize inference performance, and deliver measurable business impact.
+                  I specialize in multi-agent systems, parallel background agents, and agentic AI products that prioritize usability, safety, and real-world impact. My work spans from developing user-facing tooling and modular React components for LLM-based app generation to building production-grade APIs and real-time recommendation systems.
                 </p>
                 <p>
-                  What drives me is the challenge of making AI more accessible, interpretable, and reliable. I love experimenting with emerging AI technologies, optimizing model performance, and building systems that not only work efficiently but also provide clear insights into their decision-making processes.
+                  What drives me is the challenge of creating AI systems that are not only technically sophisticated but also practical and user-friendly. I love working with modern frameworks, optimizing performance, and building solutions that deliver measurable business value while maintaining high standards of code quality and system reliability.
                 </p>
               </div>
             </motion.div>
