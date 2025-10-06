@@ -94,7 +94,7 @@ const KLEtechLogo = (props: React.SVGProps<SVGSVGElement>) => (
 const techStack = [
   {
     category: 'Languages',
-    technologies: ['JavaScript', 'TypeScript', 'Python', 'SQL', 'HTML', 'CSS'],
+    technologies: ['Python', 'TypeScript', 'SQL', 'HTML', 'CSS'],
   },
   {
     category: 'Frameworks & APIs',
@@ -102,7 +102,7 @@ const techStack = [
   },
   {
     category: 'AI/ML',
-    technologies: ['OpenAI API (GPT-4o)', 'HuggingFace Transformers', 'Scikit-learn', 'BERT', 'LangChain'],
+    technologies: ['OpenAI API (GPT-4o)', 'Gemini', 'Claude Sonnet', 'PyTorch', 'HuggingFace', 'Transformers', 'scikit-learn', 'BERT'],
   },
   {
     category: 'DevOps',
@@ -127,9 +127,9 @@ const experience = [
     linkedin: 'https://www.linkedin.com/company/createxyz/',
     logo: CreateLogo,
     bullets: [
-      'Led the AI pipeline design team, enhancing model-driven design workflows that scaled product capabilities and contributed to ARR growth from $2M to $5M.',
-      'Built user-facing tooling and modular React components to support LLM-based app generation, speeding up prototyping workflows by 60%.',
-      'Fine-tuned generative AI agents to produce high-quality frontends, incorporating usability heuristics, structured UI trees, and real-time feedback mechanisms.'
+      'Led the design of AI pipelines and background agents for code generation, contributing $2M ARR in two weeks via real-time personalization and LLM agent orchestration.',
+      'Built user-facing tooling and React-based dashboards enabling rapid iteration on LLM-driven apps, cutting prototyping workflows by 60%.',
+      'Designed evaluation benchmarks to reduce hallucinations and improve reliability of agentic AI systems powering customer-facing products.'
     ]
   },
   {
@@ -140,22 +140,22 @@ const experience = [
     linkedin: 'https://www.linkedin.com/company/asanteimpact/',
     logo: AsanteLogo,
     bullets: [
-      'Developed a React + TypeScript admin interface for campaign access management, improving UX and increasing engagement by 30%.',
-      'Built gRPC and REST APIs in Python, integrating AWS Lambda and S3 to streamline high-throughput data pipelines.',
-      'Implemented tests with Jest and Pytest, achieving 95% coverage and reducing production defects by 25%.'
+      'Developed high-throughput APIs and data pipelines in Python, gRPC, and AWS Lambda, processing millions of events daily to support ML-driven campaign targeting.',
+      'Implemented automated tests with Pytest/Jest achieving 95% coverage, reducing production defects by 25%.',
+      'Built monitoring and alerting workflows (CloudWatch, Prometheus) to ensure reliability of ML inference pipelines at scale.'
     ]
   },
   {
     role: 'Software Engineer',
-    company: 'TEKsystems Global Services',
+    company: 'TEKsystems Global Services (Client: Prime Therapeutics)',
     period: 'Aug 2021 – June 2023',
     location: 'Bangalore, India',
     linkedin: 'https://www.linkedin.com/company/teksystems-global-services-india/',
     logo: TEKsystemsLogo,
     bullets: [
-      'Improved frontend responsiveness and performance by integrating React, Redux, and component-level caching, cutting page load times by 25%.',
-      'Partnered with UX team to redesign critical user flows, increasing customer satisfaction and reducing support tickets.',
-      'Built event-driven microservices with Spring Boot, Kafka, and AWS Lambda to improve backend scalability by 20%.'
+      'Built event-driven microservices with Spring Boot, Kafka, and AWS Lambda, enabling real-time decision-making and improving backend scalability by 20%.',
+      'Collaborated with data scientists to productionize ML models, automating deployment workflows and accelerating iteration speed by 25%.',
+      'Improved frontend performance with React + Redux, reducing page load times by 25% and supporting data-heavy user workflows.'
     ]
   },
   {
@@ -349,7 +349,7 @@ export default function AboutPageClient() {
               About <span className="gradient-text">Me</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              I'm a passionate AI/ML engineer with 3+ years of experience building intelligent systems, RAG pipelines, and LLM-integrated applications. I am actively seeking <span className="font-semibold text-primary-600 dark:text-primary-400">AI/ML Engineer</span>, <span className="font-semibold text-primary-600 dark:text-primary-400">Machine Learning Engineer</span>, <span className="font-semibold text-primary-600 dark:text-primary-400">Data Scientist</span>, and <span className="font-semibold text-primary-600 dark:text-primary-400">AI Research Engineer</span> roles. I thrive on designing distributed AI systems, optimizing inference pipelines, and deploying scalable, reliable AI services that prioritize performance, safety, and interpretability.
+              I'm an AI/ML Software Engineer with 3+ years of experience building AI-powered tools, full-stack applications, and scalable data infrastructure. My expertise lies in Python for production ML deployment, LLM agent orchestration, coding agents, and inference optimization. I specialize in multi-agent systems, parallel background agents, and agentic AI products that prioritize usability, safety, and real-world impact.
             </p>
           </motion.div>
         </Container>
@@ -372,7 +372,7 @@ export default function AboutPageClient() {
                   I'm an AI/ML Software Engineer passionate about building AI-powered tools, full-stack applications, and scalable data infrastructure. My expertise lies in Python for production ML deployment, LLM agent orchestration, coding agents, and inference optimization.
                 </p>
                 <p>
-                  I specialize in multi-agent systems, parallel background agents, and agentic AI products that prioritize usability, safety, and real-world impact. My work spans from developing user-facing tooling and modular React components for LLM-based app generation to building production-grade APIs and real-time recommendation systems.
+                  I specialize in multi-agent systems, parallel background agents, and agentic AI products that prioritize usability, safety, and real-world impact. My work spans from developing user-facing tooling and React-based dashboards for LLM-driven apps to building high-throughput APIs and data pipelines that process millions of events daily.
                 </p>
                 <p>
                   What drives me is the challenge of creating AI systems that are not only technically sophisticated but also practical and user-friendly. I love working with modern frameworks, optimizing performance, and building solutions that deliver measurable business value while maintaining high standards of code quality and system reliability.
