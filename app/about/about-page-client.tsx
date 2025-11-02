@@ -120,42 +120,45 @@ const techStack = [
 
 const experience = [
   {
-    role: 'Software Engineer',
-    company: 'Anything (createanything.com)',
+    role: 'AI Engineer',
+    company: 'Anything (formerly Create.xyz)',
     period: 'Jul 2025 – Present',
     location: 'San Francisco, CA',
     linkedin: 'https://www.linkedin.com/company/createxyz/',
     logo: CreateLogo,
     bullets: [
-      'Led the design of AI pipelines and background agents for code generation, contributing $2M ARR in two weeks via real-time personalization and LLM agent orchestration.',
-      'Built user-facing tooling and React-based dashboards enabling rapid iteration on LLM-driven apps, cutting prototyping workflows by 60%.',
-      'Designed evaluation benchmarks to reduce hallucinations and improve reliability of agentic AI systems powering customer-facing products.'
+      'Architected multi-agent LLM pipelines for code generation (Python, LangChain, GPT-5, Claude Sonnet-4, Gemini), contributing to $2M ARR within 3 months through advanced agentic capabilities enabling 600K+ users to build production web and mobile apps.',
+      'Built Deep Debugger autonomous agent with self-correction capabilities: designed evaluation framework using AST-based semantic validation, compilation success metrics, and cyclomatic complexity analysis across 400+ step workflows, achieving 78% autonomous resolution rate.',
+      'Engineered intelligent model routing system dynamically selecting between GPT-5, Claude Sonnet-4, and Gemini based on task complexity, token cost, and latency requirements; reduced inference costs 10% ($15K/month) while maintaining 95th percentile latency under 800ms.',
+      'Collaborated with Anthropic\'s Applied AI team to implement prompt caching strategies (cache hit rate: 67%), reducing token consumption by 40% and achieving 2.1x speedup on repeated agentic workflows.',
+      'Developed parallel background agents for concurrent multimodal processing (file sync, DB operations, UI generation), reducing task completion latency by 35% through async execution and optimized I/O handling.'
     ]
   },
   {
-    role: 'Software Engineer',
+    role: 'AI Engineer',
     company: 'Asante Inc',
     period: 'June 2024 – Dec 2024',
     location: 'Boulder, CO',
     linkedin: 'https://www.linkedin.com/company/asanteimpact/',
     logo: AsanteLogo,
     bullets: [
-      'Developed high-throughput APIs and data pipelines in Python, gRPC, and AWS Lambda, processing millions of events daily to support ML-driven campaign targeting.',
-      'Implemented automated tests with Pytest/Jest achieving 95% coverage, reducing production defects by 25%.',
-      'Built monitoring and alerting workflows (CloudWatch, Prometheus) to ensure reliability of ML inference pipelines at scale.'
+      'Built production RAG chatbot for internal documentation using LangGraph, Pinecone vector embeddings, and GPT-4; implemented multi-step agentic workflows with context retrieval, achieving 87% answer accuracy and reducing internal support tickets by 35%.',
+      'Engineered prompt templates for automated campaign generation across nonprofits, businesses, and customer segments; designed few-shot learning strategies and dynamic prompt construction, improving campaign relevance scores by 40%.',
+      'Fine-tuned campaign targeting models on proprietary dataset (15K+ labeled examples), implementing evaluation framework with precision/recall metrics and A/B testing; improved click-through rates by 28% and reduced targeting latency from 2000ms to 300ms.',
+      'Architected ML inference infrastructure with gRPC APIs and serverless pipelines (AWS Lambda, DynamoDB) processing 5K+ daily events; implemented model monitoring (CloudWatch, Prometheus) reducing pipeline downtime by 70%.'
     ]
   },
   {
-    role: 'Software Engineer',
+    role: 'AI Software Engineer',
     company: 'TEKsystems Global Services (Client: Prime Therapeutics)',
     period: 'Aug 2021 – June 2023',
     location: 'Bangalore, India',
     linkedin: 'https://www.linkedin.com/company/teksystems-global-services-india/',
     logo: TEKsystemsLogo,
     bullets: [
-      'Built event-driven microservices with Spring Boot, Kafka, and AWS Lambda, enabling real-time decision-making and improving backend scalability by 20%.',
-      'Collaborated with data scientists to productionize ML models, automating deployment workflows and accelerating iteration speed by 25%.',
-      'Improved frontend performance with React + Redux, reducing page load times by 25% and supporting data-heavy user workflows.'
+      'Implemented XGBoost classifiers for formulary drug decision predictions, analyzing PHI health data to forecast pharmacy insurance costs; achieved 87% accuracy with feature importance analysis enabling proactive cost management and formulary optimization.',
+      'Architected event-driven microservices (Spring Boot, Kafka, AWS Lambda) for real-time pharmacy decisioning, improving throughput 20% to handle 10K+ requests/min.',
+      'Built Query Builder tool enabling business teams to generate complex SQL queries without engineering support, reducing ad-hoc request volume by 40% and improving data accessibility.'
     ]
   },
   {
