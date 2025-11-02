@@ -98,11 +98,11 @@ const techStack = [
   },
   {
     category: 'Frameworks & APIs',
-    technologies: ['React', 'Next.js', 'Tailwind', 'FastAPI', 'Flask', 'Django', 'Spring Boot', 'REST', 'gRPC'],
+    technologies: ['React', 'Next.js', 'Tailwind', 'FastAPI', 'Flask', 'Django', 'Spring Boot', 'REST', 'gRPC', 'Kafka'],
   },
   {
     category: 'AI/ML',
-    technologies: ['OpenAI API (GPT-4o)', 'Gemini', 'Claude Sonnet', 'PyTorch', 'HuggingFace', 'Transformers', 'scikit-learn', 'BERT'],
+    technologies: ['GPT-5', 'GPT-4', 'GPT-4o', 'Claude Sonnet-4', 'Claude Sonnet', 'Gemini', 'LangChain', 'LangGraph', 'Pinecone', 'XGBoost', 'PyTorch', 'HuggingFace', 'Transformers', 'scikit-learn', 'BERT'],
   },
   {
     category: 'DevOps',
@@ -114,7 +114,7 @@ const techStack = [
   },
   {
     category: 'Databases',
-    technologies: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
+    technologies: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'DynamoDB'],
   },
 ];
 
